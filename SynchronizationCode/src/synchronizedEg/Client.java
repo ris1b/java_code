@@ -2,7 +2,7 @@ package synchronizedEg;
 
 public class Client {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {		
 		Count count = new Count();
 		
 		Adder adder = new Adder(count);
@@ -19,8 +19,5 @@ public class Client {
 		
 		// By using synchronized, output will be 0.
 		System.out.println(count.value);
-		
-		
 	}
-
 }
